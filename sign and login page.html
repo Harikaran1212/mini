@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Page</title>
+    <link rel="icon" type="icon/x-image" href="favicon.jpg">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script>
+      let login=document.getElementById('login');
+      let signup=document.getElementById('signup');
+      function funtion1(){ let login=document.getElementById('login');
+      let signup=document.getElementById('signup');
+      login.style.display="none";
+      signup.style.display="block";
+      signup.style.marginLeft="0px";
+    }
+
+    function funtion2(){ let login=document.getElementById('login');
+      let signup=document.getElementById('signup');
+      login.style.display="block";
+      signup.style.display="none";
+      signup.style.marginLeft="700px";
+    }
+
+
+
+
+    </script>
+   <style>
+.bg {
+  background-image: linear-gradient(rgb(227, 61, 19), rgb(223, 16, 116));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+.container {
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.242);
+  border: 3px solid rgb(15, 12, 12);
+  box-shadow:4px 2px 6px 5px rgba(234, 219, 237, 0.993) ;
+  padding: 15px;
+  margin-top: 5rem;
+  position:absolute;
+}
+.h {
+  text-align: center;
+color: #f3e9f5
+
+;
+}
+
+input {
+  width: 85%;
+  padding: 12px 30px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 28px;
+  opacity: 0.8;
+}
+.hi {
+  display: flex;
+}
+label {
+  margin-top: 17px;
+  color: #ccc;
+  margin-left: 3px;
+  font-family: poppins;
+}
+.checkbox {
+  cursor: pointer;
+  width: 25px;
+  accent-color: #ea047e;
+}
+button {
+  border: none;
+  background-color: #ea047e;
+  color: white;
+  font-weight: 600;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  width: 255px;
+  margin-left: 30px;
+}
+p {
+  text-align: center;
+  color: #ccc;
+  margin-top: 10%;
+}
+.social-icons-1 {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 110px;
+}
+.social-icons-2{
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 110px;
+    margin-right: 20px;
+  }
+a {
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  margin-left: -15px;
+}
+.so {
+  display: flex;
+  margin-top: -25px;
+  justify-content: space-around;
+}
+i {
+  padding-right: 6px;
+}
+.last{
+  color: #ccc;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Segoe Print", Times, serif;
+}
+
+.Icon-inside {
+  position: relative;
+}
+
+.Icon-inside i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 10px;
+  margin-left: 25px;
+  margin-top: 23px;
+  color: #F5F5F5;
+}
+
+.Icon-inside-1 {
+  position: relative;
+}
+
+.Icon-inside-1 i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 10px;
+  margin-left: 20px;
+  margin-top: 23px;
+  color: #F5F5F5;
+}
+img{
+    margin-right: 5px;
+}
+
+#signup{
+  margin-left: 700px ;
+display: none;
+}
+#signbt{
+  cursor:grab;
+}
+
+#loginbt{
+  cursor:grab;
+}
+
+.topic{
+  margin-top: -600px;
+  position: absolute;
+  font-family: "Segoe Print", Times, serif;
+}
+.topic::before{
+    content: '';
+    position:absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg,#71b7e6,rgba(11, 240, 214, 0.733));
+    box-shadow:4px 2px 6px 5px rgba(219, 237, 224, 0.993) ;
+  }
+  .move{
+    margin-top: auto;
+  }
+   </style>
+  </head>
+  <body class="bg">
+    <div class="topic">
+    <h1>Passport Automation System</h1>
+    </div>
+      <div class="container" id="login">
+        <h1 class="h">LOGIN</h1>
+        <form class="inline" action="#">
+          <div class="Icon-inside">
+            <input type="email" id="Email" name="email" placeholder="Email"/>
+            <i class="fa fa-envelope" ></i>
+          </div>
+          <div class="Icon-inside-1">
+            <input type="password" id="password" name="password" placeholder="Password"/>
+            <i class="fa fa-lock fa-lg fa-fw" ></i>
+          </div>
+        </form>
+        <div class="hi">
+          <input type="checkbox" value="remember" id="hi" class="checkbox" />
+          <label for="hi">Remember me</label>
+        </div>
+        <button type="button">Login</button>
+        <p>Or login with</p>
+        <div class="so">
+          <button class="social-icons-1">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i>Facebook</a>
+          </button>
+          <button class="social-icons-2">
+            <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1676895880%3A1711810653382851&theme=mn&ddm=0" style="color: black;"><img src="google.png" alt="logo">Google</a>
+          </button>
+        </div>
+        <p class="last">Not a member ?<a id="signbt" onclick="funtion1()"><u style="color: #ccc;">Sign up now</u></a></p>
+      </div>
+    </div>
+    <div class="container" id="signup">
+      <h1 class="h" >SIGN UP</h1>
+      <form class="inline" action="#">
+        <div class="Icon-inside">
+          <input type="text" id="username" name="username" placeholder="Username" />
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="Icon-inside">
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="Icon-inside-1">
+          <input type="password" id="password" name="password" placeholder="Password" />
+          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="hi">
+          <input type="checkbox" value="remember" id="hi" class="checkbox" />
+          <label for="hi">Remember me</label>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div>
+      <p class="last">Already have an account?<a id="loginbt" onclick="funtion2()"><u style="color: #ccc;">Log in</u></a></p>
+      </div>
+    </div>
+    <div class="move">
+      <marquee><b>
+        Application having appointment at PSK Jammu, PSK Ranchi and PSK Bhubaneshwar, kindly note there is a address change. Please refer to respective RPO page for new address. 
+    </b></marquee>
+    </div>
+  </body>
+</html>
